@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Component</title>
+
+    <style>
+        /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+
+        /* 
+        MAIN COLOR: #087f5b
+        GREY COLOR: #343a40
+        */
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        /* ------------------------ */
+        /* GENERAL STYLES */
+        /* ------------------------ */
+        body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        }
+
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+    <div class ="accordion">
+        <div class="item">
+            <a>01</a><a>De donde vienen las sillas?</a>
+        </div>  
+        <div class="item">
+            <a>02</a><a>Como devolver la silla?</a>
+            <p>Devolve tu silla en los locales habilitados, revisa antes que tus sillas esten en perfectas condiciones. No pueden haber roturas ni manchas en los tapizados.</p>
+            <ul>
+                Chequea todos los bordes.
+            </ul>
+            <ul>
+                No despegues las etiquetas.
+            </ul>
+            <ul>
+                Conserva la planilla que te damos.
+            </ul>
+            <ul>
+                Si encontraste una mancha reportala en nuestro sitio web.
+            </ul>
+        </div>
+        <div class="item">
+            <a>03</a><a>Te fuiste del pais y no sabes que hacer?</a>
+        </div>     
+    </div>
+    
+</body>
+</html>
