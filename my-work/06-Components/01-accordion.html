@@ -38,6 +38,9 @@
         .accordion{
             width: 700px;
             margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
         }
 
         .dopdown{
@@ -46,23 +49,30 @@
             stroke: #087f5b;
         }
 
-        .ac-head{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-size: 28px;
-            gap: 18px;
-        }
 
         .item{
-            margin-bottom: 24px;
             box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
             padding: 18px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            column-gap: 24px;
+            row-gap: 32px;
+            align-items: center;
         }
+
         .number, .titleBox{
             font-weight: 500;
+            font-size: 28px;
+        }
+
+        .number{
+            color: #ced4da;
         }
         
+        .ac-body{
+            grid-column: 2;
+        }
+
         .ac-body p{
             line-height: 1.6;
             margin-bottom: 24px;
@@ -77,12 +87,30 @@
         }
 
 
+        .hidden-box{
+            display: none;
+        }
+
         .selected{
-            border-top-width: medium;
-            border-top: #087f5b;
+           
+            border-top: 4px solid #087f5b;
+        }
+
+        .selected .number, .selected .titleBox {
+            color: #087f5b;
         }
 
     </style>
+    <script>
+        function myFunction(id) {
+          
+          document.getElementById("it1").className = "item";
+          document.getElementById("it2").className = "item";
+          document.getElementById("it3").className = "item";
+          id.className = "item selected";
+        }
+
+        </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -91,21 +119,17 @@
 </head>
 <body>
     <div class ="accordion">
-        <div class="item">
-            <div class="ac-head">
-                <p class="number">01</p><p class="titleBox">De donde vienen las sillas?</p>
+        <div class="item" id="it1" onclick="myFunction(this)" >
+            <p class="number" >01</p><p class="titleBox">De donde vienen las sillas?</p>
                 <svg class="dopdown" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-            </div>  
+            </svg> 
         </div>  
-        <div class="item selected">
-            <div class="ac-head">
-                <p class="number">02</p><p class="titleBox" >Como devolver la silla?</p>
-                <svg class="dopdown" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-              </svg>
-            </div>
+        <div class="item selected" id="it2" onclick="myFunction(this)">
+            <p class="number">02</p><p class="titleBox" >Como devolver la silla?</p>
+            <svg class="dopdown" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
             
             <div class="ac-body">
                 <p>Devolve tu silla en los locales habilitados, 
@@ -124,13 +148,12 @@
             
 
         </div>
-        <div class="item">
-            <div class="ac-head">
+        <div class="item" id="it3" onclick="myFunction(this)">
                 <p class="number">03</p><p class="titleBox">Te fuiste del pais y no sabes que hacer?</p>
                 <svg class="dopdown" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                 </svg>
-            </div>
+            
             
               
         </div>     
