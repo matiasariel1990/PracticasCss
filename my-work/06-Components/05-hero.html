@@ -28,7 +28,6 @@
             font-weight: 700;
             display: flex;
             justify-content: space-between;
-            background-color: green;
         }
         
         h1{
@@ -45,7 +44,6 @@
         .container{
             margin: 0 auto;
             width: 1200px;
-            background-color: red;
             margin-bottom: 48px;
         }
 
@@ -73,6 +71,23 @@
         header{
             background-color: #e67e22;
             height: 100vh;
+            position:relative;
+            background-image: linear-gradient(rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)), url(hero.jpg);
+            background-size: cover;
+            color: #fff;
+        }
+
+        .main-description{
+            position: absolute;
+            width: 1200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text-container-inner{
+            width: 50%;
         }
 
 
@@ -90,13 +105,15 @@
             <div>NAVIGATION</div>
         </nav>
 
-        <div class="container">
+        <div class="main-description">
+            <div class="text-container-inner">
             <h1>A healty meal delivered yo your door, every single day</h1>
             <p>
                 The smart 365-days-per-year food subscription that
                  will make you eat healty algain. Tailored to your personal tastes and nutrictional needs.
             </p>
             <a class="btn">Start eatting well</a>
+        </div>
         </div>
 
         
