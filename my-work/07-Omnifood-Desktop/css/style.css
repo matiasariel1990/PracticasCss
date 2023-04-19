@@ -5,6 +5,8 @@
     
 }
 
+
+/*GENERAL*/
 html{
     font-family: 'Rubik', sans-serif;
     line-height: 1;
@@ -21,6 +23,22 @@ body{
     height: 2.2rem;
 }
 
+.heading-secondary{
+    font-size: 3.8rem;
+}
+
+.subheading{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: hsla(28, 80%, 52%, 0.918);
+    font-weight: 500;
+
+}
+
+
+
+/*HERO*/
+
 .section-hero{
     height: 80vh;
     max-width: 130rem;
@@ -34,7 +52,7 @@ body{
 
 
 .hero-img{
-    max-width: 500px;
+    max-width: 60rem;
 }
 
 .delivered-imgs {
@@ -56,7 +74,7 @@ body{
 .hero-txt{
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 50rem;
 }
 
 .hero-txt-principal, .hero-txt-description{
@@ -114,6 +132,7 @@ body{
     align-items: center;
     margin: 2.2rem;
     color:#495057;
+    font-size: 1.8rem;
 }
 
 .main-nav-list{
@@ -125,7 +144,7 @@ body{
 .main-nav-link{
     text-decoration: none;
     color:#495057;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -134,7 +153,7 @@ body{
     color:#fdf2e9;
     font-weight: 500;
     font-size: 1.5rem;
-    padding: 12px 24px;
+    padding: 1.2rem 2.4rem;
     border-radius: 9px;
 }
 
@@ -188,3 +207,5 @@ body{
 .delivered-text span{
     color:hsla(28, 80%, 52%, 0.918);
 }
+
+/*HOW IT WORKS*/
