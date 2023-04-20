@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*GENERAL*/
+html{
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #fdf2e9;
+    color:#212529;
+}
+
+.logo{
+    height: 2.2rem;
+}
+
+.heading-secondary{
+    font-size: 3.8rem;
+    margin-bottom: 9.6rem;
+    line-height: 1.05;
+}
+
+.heading-tertiary{
+    font-size: 2.5rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.2;
+}
+
+.subheading{
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: hsla(28, 80%, 52%, 0.918);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.container{
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    gap: 9.6rem;
+}
+
+
+.grid--2-cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols{
+    grid-template-columns: repeat(4, 1fr);
+}
